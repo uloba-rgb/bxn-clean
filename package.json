@@ -88,15 +88,7 @@
     "vite-plugin-manus-runtime": "^0.0.58",
     "vitest": "^2.1.4"
   },
-  "pnpm": {
-  "overrides": {
-    "tailwindcss-animate": "1.0.7"
+    } 
+    "vitest": "^2.1.4"
   }
-}
-    "pnpm": {
-  "overrides": {
-    "tailwindcss-animate": "1.0.7"
-  }
-}
-}
 }
