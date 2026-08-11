@@ -25,7 +25,7 @@ export default function Header() {
       <nav className="container flex items-center justify-between py-3" aria-label="Primary navigation">
         <div className="flex items-center gap-6">
           <Link href="/" onClick={closeMenu} aria-label="BXN home" className="group flex items-center">
-            <img src="/bxn-logo.png" alt="BXN" className="h-12 w-auto max-w-[210px] object-contain transition-transform duration-200 group-hover:scale-[1.03] md:h-14" />
+            <img src={`${import.meta.env.BASE_URL}bxn-logo.png`} alt="BXN" className="h-12 w-auto max-w-[210px] object-contain transition-transform duration-300 group-hover:scale-105" />
           </Link>
 
           <div className="hidden items-center gap-3 border-l border-gray-700 pl-6 md:flex">
