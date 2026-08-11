@@ -1,6 +1,6 @@
-import Header from "@/components/Header";
-import MarqueeStrip from "@/components/MarqueeStrip";
-import Footer from "@/components/Footer";
+import Header from "./Header";
+import MarqueeStrip from "./MarqueeStrip";
+import Footer from "./Footer";
 import { useEffect, useRef, useState } from "react";
 import { ArrowRight, CheckCircle, Shield, Brain, Target, TrendingUp, Zap, Users, FileText, Layers, BookOpen, Cpu } from "lucide-react";
 import { Link } from "wouter";
