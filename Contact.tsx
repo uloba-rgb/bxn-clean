@@ -1,6 +1,6 @@
-import Header from "@/components/Header";
+import Header from "./Header";
 import MarqueeStrip from "@/components/MarqueeStrip";
-import Footer from "@/components/Footer";
+import Footer from "./Footer";
 import { useState } from "react";
 import { ArrowRight, Mail, MapPin, Phone } from "lucide-react";
 import { toast } from "sonner";
