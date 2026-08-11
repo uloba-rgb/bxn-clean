@@ -22,7 +22,7 @@ export default function Header() {
       className="border-b backdrop-blur-[10px]"
       style={{ backgroundColor: "rgba(10, 10, 10, 0.9)", borderColor: "#1e1e1e" }}
     >
-      <nav className="container flex items-center justify-between py-1" aria-label="Primary navigation">
+      <nav className="container flex items-center justify-between py-0" aria-label="Primary navigation">
         <div className="flex items-center gap-6">
           <Link href="/" onClick={closeMenu} aria-label="BXN home" className="group flex items-center">
   <img
