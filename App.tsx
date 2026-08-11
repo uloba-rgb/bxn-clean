@@ -4,7 +4,7 @@ import NotFound from "./NotFound";
 import { Route, Switch } from "wouter";
 import ErrorBoundary from "./ErrorBoundary";
 import LiveGraph from "./LiveGraph";
-import { ThemeProvider } from "./contexts/ThemeContext";
+import { ThemeProvider } from "./ThemeContext";
 import Home from "./Home";
 import About from "./About";
 import Services from "./Services";
