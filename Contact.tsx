@@ -1,5 +1,5 @@
 import Header from "./Header";
-import MarqueeStrip from "@/components/MarqueeStrip";
+import MarqueeStrip from "./MarqueeStrip";
 import Footer from "./Footer";
 import { useState } from "react";
 import { ArrowRight, Mail, MapPin, Phone } from "lucide-react";
