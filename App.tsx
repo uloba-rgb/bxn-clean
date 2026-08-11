@@ -36,13 +36,10 @@ function Router() {
 function App() {
   return (
     <ErrorBoundary>
-     <ThemeProvider defaultTheme="dark">
+      <ThemeProvider defaultTheme="dark">
         <WouterRouter base="/bxn-clean">
-       // <TooltipProvider>
-         // <Toaster />
           <Router />
-          </WouterRouter>
-       // </TooltipProvider>
+        </WouterRouter>
       </ThemeProvider>
     </ErrorBoundary>
   );
