@@ -1,7 +1,7 @@
 //import { Toaster } from "@/components/ui/sonner";
 //import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "./NotFound";
-import { Route, Switch } from "wouter";
+import { Route, Switch, Router as WouterRouter } from "wouter";
 import ErrorBoundary from "./ErrorBoundary";
 import LiveGraph from "./LiveGraph";
 import { ThemeProvider } from "./ThemeContext";
@@ -36,10 +36,12 @@ function Router() {
 function App() {
   return (
     <ErrorBoundary>
-      <ThemeProvider defaultTheme="dark">
+     <ThemeProvider defaultTheme="dark">
+        <WouterRouter base="/bxn-clean">
        // <TooltipProvider>
          // <Toaster />
           <Router />
+          </WouterRouter>
        // </TooltipProvider>
       </ThemeProvider>
     </ErrorBoundary>
