@@ -19,7 +19,7 @@ export default function Header() {
 
   return (
     <header
-      className="sticky top-0 z-50 border-b backdrop-blur-[10px]"
+      className="border-b backdrop-blur-[10px]"
       style={{ backgroundColor: "rgba(10, 10, 10, 0.9)", borderColor: "#1e1e1e" }}
     >
       <nav className="container flex items-center justify-between py-3" aria-label="Primary navigation">
