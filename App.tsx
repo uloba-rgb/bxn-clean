@@ -1,14 +1,14 @@
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import NotFound from "@/pages/NotFound";
+import NotFound from "./NotFound";
 import { Route, Switch } from "wouter";
 import ErrorBoundary from "./ErrorBoundary";
-import LiveGraph from "./components/LiveGraph";
+import LiveGraph from "./LiveGraph";
 import { ThemeProvider } from "./contexts/ThemeContext";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Services from "./pages/Services";
-import Contact from "./pages/Contact";
+import Home from "./Home";
+import About from "./About";
+import Services from "./Services";
+import Contact from "./Contact";
 
 /**
  * BXN design reminder: one connected, dark operating system with neon-lime signals.
