@@ -25,8 +25,12 @@ export default function Header() {
       <nav className="container flex items-center justify-between py-3" aria-label="Primary navigation">
         <div className="flex items-center gap-6">
           <Link href="/" onClick={closeMenu} aria-label="BXN home" className="group flex items-center">
-            <img src={`${import.meta.env.BASE_URL}bxn-logo.png`} alt="BXN" className="w-[300px] h-auto object-contain
-          </Link>
+  <img
+    src={`${import.meta.env.BASE_URL}bxn-logo.png`}
+    alt="BXN"
+    className="w-[300px] h-auto object-contain"
+  />
+</Link>
 
           <div className="hidden items-center gap-3 border-l border-gray-700 pl-6 md:flex">
             <a href="https://www.facebook.com/profile.php?id=61590224003461" target="_blank" rel="noopener noreferrer" className="text-gray-500 transition-colors hover:text-white" title="Follow us on Facebook"><Facebook size={18} /></a>
