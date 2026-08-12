@@ -13,7 +13,7 @@ export default defineConfig({
     },
   },
  root: import.meta.dirname,
-  base: "/bxn-clean/",
+  base: "/",
   build: {
     outDir: path.resolve(import.meta.dirname, "dist"),
     emptyOutDir: true,
