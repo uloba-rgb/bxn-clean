@@ -37,9 +37,9 @@ function App() {
   return (
     <ErrorBoundary>
       <ThemeProvider defaultTheme="dark">
-        <WouterRouter base="/bxn-clean">
-          <Router />
-        </WouterRouter>
+        <WouterRouter>
+  <Router />
+</WouterRouter>
       </ThemeProvider>
     </ErrorBoundary>
   );
