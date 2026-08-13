@@ -330,12 +330,12 @@ export default function Home() {
           {/* Service Cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px" style={{ backgroundColor: '#1e1e1e' }}>
             {[
-              { icon: <Shield size={28} />, title: 'Entity Setup', desc: 'Complete business formation — incorporation, brand, compliance, and infrastructure. Done right from day one.' },
+              { icon: <Shield size={28} />, title: 'Entity Setup', desc: 'Complete business formation incorporation, brand, compliance, and infrastructure. Done right from day one.' },
               { icon: <Brain size={28} />, title: 'BXN Method™', desc: 'Our proprietary methodology for solving business problems. Practical, repeatable, and evidence-based.' },
               { icon: <Target size={28} />, title: 'Framework Development', desc: 'Custom frameworks built from real work that produce measurable outcomes and become your IP.' },
-              { icon: <TrendingUp size={28} />, title: 'Growth Systems', desc: 'Operating systems for sustainable growth — playbooks, processes, and automation that scale.' },
+              { icon: <TrendingUp size={28} />, title: 'Growth Systems', desc: 'Operating systems for sustainable growth playbooks, processes, and automation that scale.' },
               { icon: <Zap size={28} />, title: 'AI Integration', desc: 'Intelligent systems that understand your business, trained on your canon and methodology.' },
-              { icon: <Users size={28} />, title: 'Brand & Identity', desc: 'Strategic brand architecture — logo, guidelines, voice, and visual identity that commands authority.' }
+              { icon: <Users size={28} />, title: 'Brand & Identity', desc: 'Strategic brand architecture  logo, guidelines, voice, and visual identity that commands authority.' }
             ].map((service, idx) => (
               <AnimatedSection key={idx} delay={idx * 100}>
                 <div
@@ -391,7 +391,7 @@ export default function Home() {
               { num: '01', title: 'Discover', desc: 'Deep dive into your business model, revenue streams, constraints, and growth blockers.' },
               { num: '02', title: 'Architect', desc: 'Design proprietary systems, frameworks, and methodologies specific to your challenges.' },
               { num: '03', title: 'Build', desc: 'Implement systems, processes, and infrastructure that drive measurable transformation.' },
-              { num: '04', title: 'Scale', desc: 'Refine, automate, and expand — turning your business into an unstoppable machine.' }
+              { num: '04', title: 'Scale', desc: 'Refine, automate, and expand turning your business into an unstoppable machine.' }
             ].map((step, idx) => (
               <AnimatedSection key={idx} delay={idx * 150}>
                 <div className="relative">
