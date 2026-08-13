@@ -3,7 +3,6 @@
 import NotFound from "./NotFound";
 import { Route, Switch, Router as WouterRouter } from "wouter";
 import ErrorBoundary from "./ErrorBoundary";
-import LiveGraph from "./LiveGraph";
 import { ThemeProvider } from "./ThemeContext";
 import Home from "./Home";
 import About from "./About";
@@ -17,7 +16,6 @@ import Contact from "./Contact";
 function Router() {
   return (
     <div className="relative isolate min-h-screen">
-      <LiveGraph />
       <div className="relative z-10">
         <Switch>
           <Route path="/" component={Home} />
