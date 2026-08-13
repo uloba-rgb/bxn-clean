@@ -117,7 +117,7 @@ export default function Home() {
 
       {/* Hero Section */}
       <section
-        className="relative py-28 md:py-36 lg:py-44 overflow-hidden"
+        className="relative pt-16 pb-20 md:pt-20 md:pb-24 lg:pt-20 lg:pb-28 overflow-hidden"
         style={{ backgroundColor: '#0b0b0b' }}
       >
         <BackgroundGrid />
