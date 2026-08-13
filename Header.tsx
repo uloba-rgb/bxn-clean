@@ -26,7 +26,6 @@ export default function Header() {
         <div className="flex items-center gap-6">
           <Link href="/" onClick={closeMenu} aria-label="BXN home" className="group flex items-center">
   <img
- <img
   src={`${import.meta.env.BASE_URL}bxn-logo.png`}
   alt="BXN"
   className="w-[140px] h-auto object-contain"
