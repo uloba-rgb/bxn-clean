@@ -28,7 +28,7 @@ export default function Header() {
   <img
     src={`${import.meta.env.BASE_URL}bxn-logo.png`}
     alt="BXN"
-    className="w-[200px] h-auto object-contain"
+    className="w-[140px] h-auto object-contain"
   />
 </Link>
 
