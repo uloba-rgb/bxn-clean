@@ -224,7 +224,8 @@ export default function Home() {
       type="video/mp4"
     />
   </video>
-</div>
+</div> 
+  </div>   
         </div>
       </section>
 
