@@ -211,7 +211,7 @@ export default function Home() {
             </div>
           </div> 
     {/* RIGHT SIDE — BXN VIDEO */}
-<div className="hidden lg:flex items-center justify-center -mt-20">
+<div className="hidden lg:flex items-center justify-center -mt-40">
   <video
     autoPlay
     loop
