@@ -123,7 +123,10 @@ export default function Home() {
         <BackgroundGrid />
 
         <div className="container relative z-10">
-          <div className="max-w-4xl">
+  <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+
+    {/* LEFT SIDE — EXISTING BXN CONTENT */}
+    <div>
             {/* Eyebrow */}
             <div className="flex items-center gap-3.5 mb-7">
               <div className="w-9 h-px" style={{ backgroundColor: '#9dff00' }} />
@@ -206,7 +209,22 @@ export default function Home() {
                 </button>
               </Link>
             </div>
-          </div>
+          </div> 
+    {/* RIGHT SIDE — BXN VIDEO */}
+<div className="hidden lg:flex items-center justify-center">
+  <video
+    autoPlay
+    loop
+    muted
+    playsInline
+    className="w-full max-w-[600px] rounded-xl object-cover"
+  >
+    <source
+      src={`${import.meta.env.BASE_URL}bxn-hero.mp4`}
+      type="video/mp4"
+    />
+  </video>
+</div>
         </div>
       </section>
 
