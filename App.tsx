@@ -15,20 +15,41 @@ import Contact from "./Contact";
  */
 function Router() {
   return (
-    <div className="relative isolate min-h-screen">
-      <div className="relative z-10">
-        <Switch>
-          <Route path="/" component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/services" component={Services} />
-          <Route path="/contact" component={Contact} />
-          <Route path="/os" component={About} />
-          <Route path="/404" component={NotFound} />
-          <Route component={NotFound} />
-        </Switch>
-      </div>
-    </div>
-  );
+    <div className="relative isolate min-h-screen bg-black">
+
+      {/* BXN GLOBAL BACKGROUND VIDEO */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        preload="auto"
+        className="fixed inset-0 w-full h-full object-cover z-0"
+      >
+        <source
+          src={`${import.meta.env.BASE_URL}bxn-background.mp4`}
+          type="video/mp4"
+        />
+      </video>
+
+      {/* DARK OVERLAY */}
+      <div className="fixed inset-0 bg-black/50 z-[1]" />
+
+      {/* WEBSITE CONTENT */}
+<div className="relative z-10">
+  <Switch>
+    <Route path="/" component={Home} />
+    <Route path="/about" component={About} />
+    <Route path="/services" component={Services} />
+    <Route path="/contact" component={Contact} />
+    <Route path="/os" component={About} />
+    <Route path="/404" component={NotFound} />
+    <Route component={NotFound} />
+  </Switch>
+</div>
+
+</div>
+);
 }
 
 function App() {
