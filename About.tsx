@@ -42,13 +42,13 @@ function AnimatedSection({ children, className = "", delay = 0 }: { children: Re
 
 export default function About() {
   return (
-    <div className="bg-black min-h-screen" style={{ backgroundColor: '#0b0b0b' }}>
+    <div className="min-h-screen bg-transparent">
       <Header />
       <MarqueeStrip />
 
       {/* Hero Section */}
       <section className="py-28 md:py-36 relative overflow-hidden" style={{ backgroundColor: '#0b0b0b' }}>
-        {/* Background grid boxes */}
+        
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
