@@ -111,14 +111,13 @@ export default function Home() {
   }, [statsVisible]);
 
   return (
-    <div className="bg-black min-h-screen" style={{ backgroundColor: '#0b0b0b' }}>
+    <div className="min-h-screen bg-transparent">
       <Header />
       <MarqueeStrip />
 
       {/* Hero Section */}
       <section
         className="relative pt-16 pb-20 md:pt-20 md:pb-24 lg:pt-20 lg:pb-28 overflow-hidden"
-        style={{ backgroundColor: '#0b0b0b' }}
       >
         <BackgroundGrid />
 
