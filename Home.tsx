@@ -211,7 +211,7 @@ export default function Home() {
             </div>
           </div> 
     {/* RIGHT SIDE — BXN VIDEO */}
-<div className="flex items-center justify-center w-full">
+<div className="flex items-center justify-center w-full -mt-60 ">
   <video
     autoPlay
     loop
