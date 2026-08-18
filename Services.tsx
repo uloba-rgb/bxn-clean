@@ -42,12 +42,12 @@ function AnimatedSection({ children, className = "", delay = 0 }: { children: Re
 
 export default function Services() {
   return (
-    <div className="bg-black min-h-screen" style={{ backgroundColor: '#0b0b0b' }}>
+     <div className="min-h-screen bg-transparent">
       <Header />
       <MarqueeStrip />
 
       {/* Hero Section */}
-      <section className="py-28 md:py-36 relative overflow-hidden" style={{ backgroundColor: '#0b0b0b' }}>
+      <section className="py-28 md:py-36 relative overflow-hidden" style={{ backgroundColor: "transparent" }}>
         <div
           className="absolute inset-0 pointer-events-none"
           style={{ opacity: 0.4, backgroundImage: 'linear-gradient(to right, #1e1e1e 1px, transparent 1px), linear-gradient(to bottom, #1e1e1e 1px, transparent 1px)', backgroundSize: '80px 80px' }}
@@ -56,7 +56,7 @@ export default function Services() {
         <div className="container relative z-10">
           <div className="max-w-3xl">
             <div className="flex items-center gap-3.5 mb-7">
-              <div className="w-9 h-px" style={{ backgroundColor: '#9dff00' }} />
+              <div className="w-9 h-px" style={{ backgroundColor:"transparent"  }} />
               <span className="text-xs tracking-widest" style={{ color: '#9dff00', fontFamily: "'JetBrains Mono', monospace" }}>
                 OUR SERVICES
               </span>
