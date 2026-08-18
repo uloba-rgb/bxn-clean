@@ -39,11 +39,41 @@ export default function Contact() {
     message: ''
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+ const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+
+  try {
+    const response = await fetch("https://services.leadconnectorhq.com/hooks/umVqNp63DWiAnB4tbv3R/webhook-trigger/214f99f0-fe7c-4126-a23c-034bcf80a225", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name: formData.name,
+        email: formData.email,
+        company: formData.company,
+        message: formData.message,
+        source: "BXN Website",
+      }),
+    });
+
+    if (!response.ok) {
+      throw new Error("Failed to send");
+    }
+
     toast.success("Message sent! We'll get back to you within 24 hours.");
-    setFormData({ name: '', email: '', company: '', message: '' });
-  };
+
+    setFormData({
+      name: "",
+      email: "",
+      company: "",
+      message: "",
+    });
+  } catch (error) {
+    console.error(error);
+    toast.error("Something went wrong. Please try again.");
+  }
+};
 
   return (
     <div className="bg-black min-h-screen" style={{ backgroundColor: '#0b0b0b' }}>
