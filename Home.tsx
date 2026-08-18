@@ -211,13 +211,14 @@ export default function Home() {
             </div>
           </div> 
     {/* RIGHT SIDE — BXN VIDEO */}
-<div className="hidden lg:flex items-center justify-center -mt-60">
+<div className="flex items-center justify-center w-full">
   <video
     autoPlay
     loop
     muted
     playsInline
-    className="w-full max-w-[600px] rounded-xl object-cover"
+    preload="auto"
+    className="w-full max-w-[600px] h-auto object-cover"
   >
     <source
       src={`${import.meta.env.BASE_URL}bxn-hero.mp4`}
