@@ -116,10 +116,12 @@ export default function Home() {
       <MarqueeStrip />
 
       {/* Hero Section */}
-      <section
+  
+  <section
   className="relative pt-4 pb-20 md:pt-6 md:pb-24 lg:pt-6 lg:pb-28 overflow-hidden"
+>
 
-      >
+      
         <BackgroundGrid />
 
         <div className="container relative z-10">
