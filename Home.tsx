@@ -116,8 +116,7 @@ export default function Home() {
       <MarqueeStrip />
 
       {/* Hero Section */}
-  
-  <section
+ <section
   className="relative pt-4 pb-20 md:pt-6 md:pb-24 lg:pt-6 lg:pb-28 overflow-hidden"
 >
 
@@ -212,6 +211,7 @@ export default function Home() {
               </Link>
             </div>
           </div> 
+    <div className="flex items-center justify-center w-full lg:-mt-60">
 <video
   autoPlay
   loop
