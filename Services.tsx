@@ -355,7 +355,7 @@ export default function Services() {
       </section>
 
       {/* Why Choose BXN */}
-      <section className="py-28 md:py-36 relative" style={{ backgroundColor: '#0b0b0b' }}>
+      <section className="py-28 md:py-36 relative" style={{ backgroundColor: "transparent" }}>
         <div className="absolute inset-0 pointer-events-none" style={{ opacity: 0.4, backgroundImage: 'linear-gradient(to right, #1e1e1e 1px, transparent 1px), linear-gradient(to bottom, #1e1e1e 1px, transparent 1px)', backgroundSize: '80px 80px' }} />
         <div className="container relative z-10">
           <AnimatedSection>
