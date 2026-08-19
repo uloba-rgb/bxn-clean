@@ -117,7 +117,8 @@ export default function Home() {
 
       {/* Hero Section */}
       <section
-        className="relative pt-16 pb-20 md:pt-20 md:pb-24 lg:pt-20 lg:pb-28 overflow-hidden"
+  className="relative pt-4 pb-20 md:pt-6 md:pb-24 lg:pt-6 lg:pb-28 overflow-hidden"
+
       >
         <BackgroundGrid />
 
