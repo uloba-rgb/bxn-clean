@@ -212,23 +212,27 @@ export default function Home() {
               </Link>
             </div>
           </div> 
-{/* LEFT SIDE — TRANSPARENT X VIDEO */}
-<div className="flex items-center justify-center w-full -mt-60">
-  <video
-    autoPlay
-    loop
-    muted
-    playsInline
-    preload="auto"
-    className="w-full max-w-[600px] h-auto object-contain"
-  >
-    <source
-      src={`${import.meta.env.BASE_URL}BXN_X_transparent.webm`}
-      type="video/webm"
-    />
-  </video>
-</div>
-  </div>   
+<video
+  autoPlay
+  loop
+  muted
+  playsInline
+  className="w-full max-w-[520px] h-auto object-contain"
+>
+  {/* iPhone / Safari */}
+  <source
+    src={`${import.meta.env.BASE_URL}BXN_X_alpha.mov`}
+    type='video/quicktime; codecs="hvc1"'
+  />
+
+  {/* Chrome / Android / Desktop */}
+  <source
+    src={`${import.meta.env.BASE_URL}BXN_X_transparent.webm`}
+    type="video/webm"
+  />
+</video> 
+   </div>
+            </div>
         </div>
       </section>
 
