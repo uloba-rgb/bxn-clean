@@ -258,7 +258,7 @@ export default function Home() {
       </section>
 
       {/* Problem / Solution Section */}
-      <section className="py-28 md:py-36 relative" style={{ backgroundColor: '#0b0b0b' }}>
+      <section className="py-28 md:py-36 relative" style={{ backgroundColor: "py-20 bg-transparent" }}>
         <BackgroundGrid />
         <div className="container relative z-10">
           <AnimatedSection>
@@ -388,7 +388,7 @@ export default function Home() {
       </section>
 
       {/* How We Work Section */}
-      <section className="py-28 md:py-36 relative" style={{ backgroundColor: '#0b0b0b' }}>
+      <section className="py-28 md:py-36 relative" style={{ backgroundColor: "py-20 bg-transparent" }}>
         <BackgroundGrid />
         <div className="container relative z-10">
           <AnimatedSection>
@@ -443,13 +443,13 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-28 md:py-36 relative" style={{ backgroundColor: '#0b0b0b' }}>
+      <section className="py-20 md:py-28 relative bg-transparent">
         <BackgroundGrid />
         <div className="container relative z-10">
           <AnimatedSection>
             <div
               className="border p-12 md:p-16 relative text-center"
-              style={{ borderColor: '#1e1e1e', backgroundColor: '#0f0f0f' }}
+              style={{ borderColor: "#1e1e1e", backgroundColor: "transparent" }}
             >
               {/* Corner brackets */}
               <div className="absolute top-0 left-0 w-11 h-11" style={{ borderTop: '2px solid #9dff00', borderLeft: '2px solid #9dff00', marginTop: '-1px', marginLeft: '-1px' }} />
