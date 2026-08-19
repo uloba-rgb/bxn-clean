@@ -230,10 +230,11 @@ export default function Home() {
     src={`${import.meta.env.BASE_URL}BXN_X_transparent.webm`}
     type="video/webm"
   />
-</video> 
-   </div>
-        </div>
-      </section>
+</video>
+</div>
+</div>
+</div>
+</section>
 
       {/* Stats Section */}
       <section className="py-16 border-t border-b relative" style={{ borderColor: '#1e1e1e', backgroundColor: '#0f0f0f' }}>
