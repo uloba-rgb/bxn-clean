@@ -210,22 +210,22 @@ export default function Home() {
               </Link>
             </div>
           </div> 
-    {/* RIGHT SIDE — BXN VIDEO */}
-<div className="flex items-center justify-center w-full -mt-60 ">
+{/* LEFT SIDE — TRANSPARENT X VIDEO */}
+<div className="flex items-center justify-center w-full">
   <video
     autoPlay
     loop
     muted
     playsInline
     preload="auto"
-    className="w-full max-w-[600px] h-auto object-cover"
+    className="w-full max-w-[600px] h-auto object-contain"
   >
     <source
-      src={`${import.meta.env.BASE_URL}bxn-hero.mp4`}
-      type="video/mp4"
+      src={`${import.meta.env.BASE_URL}BXN_X_transparent.webm`}
+      type="video/webm"
     />
   </video>
-</div> 
+</div>
   </div>   
         </div>
       </section>
