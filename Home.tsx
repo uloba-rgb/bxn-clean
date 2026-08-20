@@ -211,37 +211,21 @@ export default function Home() {
               </Link>
             </div>
           </div>  
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-10 items-center">
-
-  {/* X VIDEO */}
-  <div className="relative z-30 flex items-center justify-center w-full">
-    <video
-      autoPlay
-      loop
-      muted
-      playsInline
-      preload="auto"
-      className="w-full max-w-[320px] sm:max-w-[400px] md:max-w-[480px] lg:max-w-[620px] h-auto object-contain"
-    >
-      {/* iPhone / Safari */}
-      <source
-        src={`${import.meta.env.BASE_URL}BXN_X_alpha.mov`}
-        type='video/quicktime; codecs="hvc1"'
-      />
-
-      {/* Android / Chrome / Desktop */}
-      <source
-        src={`${import.meta.env.BASE_URL}BXN_X_transparent.webm`}
-        type="video/webm"
-      />
-    </video>
-  </div>
-
-  {/* LANDING PAGE TEXT */}
-  <div className="relative z-30">
-    {/* KEEP YOUR EXISTING TEXT HERE */}
-    </div> 
-  </div>
+<div className="relative z-30 flex items-center justify-center w-full">
+  <video
+    autoPlay
+    loop
+    muted
+    playsInline
+    preload="auto"
+    className="w-[90vw] max-w-[760px] h-auto object-contain"
+  >
+    <source
+      src={`${import.meta.env.BASE_URL}BXN_X_transparent.webm`}
+      type="video/webm"
+    />
+  </video>
+</div>
 </div>
 </div>
 </section>
