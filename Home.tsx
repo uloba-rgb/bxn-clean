@@ -117,7 +117,7 @@ export default function Home() {
 
       {/* Hero Section */}
  <section
-  className="relative pt-4 pb-20 md:pt-6 md:pb-24 lg:pt-6 lg:pb-28 overflow-hidden"
+  className="relative pt-4 pb-20 md:pt-6 md:pb-24 lg:pt-6 lg:pb-28 overflow-visible"
 >
 
       
