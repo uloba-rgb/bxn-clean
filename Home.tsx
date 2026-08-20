@@ -211,22 +211,15 @@ export default function Home() {
               </Link>
             </div>
           </div> 
-<div className="relative z-30 flex items-center justify-center w-full lg:-mt-20">
+<div className="relative z-30 flex items-center justify-center w-full">
   <video
     autoPlay
     loop
     muted
     playsInline
     preload="auto"
-    className="w-full h-[420px] md:h-[650px] lg:h-[750px] object-contain"
+    className="w-full max-w-[480px] md:max-w-[560px] lg:max-w-[620px] h-auto object-contain"
   >
-    {/* iPhone / Safari */}
-    <source
-      src={`${import.meta.env.BASE_URL}BXN_X_alpha.mov`}
-      type='video/quicktime; codecs="hvc1"'
-    />
-
-    {/* Android / Chrome / Desktop */}
     <source
       src={`${import.meta.env.BASE_URL}BXN_X_transparent.webm`}
       type="video/webm"
