@@ -219,14 +219,14 @@ export default function Home() {
   </div>
 
   {/* RIGHT SIDE — TRANSPARENT X VIDEO */}
-  <div className="relative z-30 flex items-center justify-center w-full -mt-120">
+  <div className="relative z-30 flex items-center justify-center w-full -mt-60">
     <video
       autoPlay
       loop
       muted
       playsInline
       preload="auto"
-      className="w-full max-w-[420px] md:max-w-[500px] lg:max-w-[600px] h-auto object-contain"
+      className="w-[500px] md:w-[650px] lg:w-[800px] h-[650px] md:h-[750px] lg:h-[850px] object-contain max-w-none"
     >
       <source
         src={`${import.meta.env.BASE_URL}BXN_X_transparent.webm`}
