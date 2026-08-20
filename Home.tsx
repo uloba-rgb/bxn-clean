@@ -228,7 +228,7 @@ export default function Home() {
 
     {/* Android / Chrome / Desktop */}
     <source
-      src={`${import.meta.env.BASE_URL}BXN_X_original_inframe_transparent.webm`}
+      src={`${import.meta.env.BASE_URL}BXN_X_transparent.webm`}
       type="video/webm"
     />
   </video>
