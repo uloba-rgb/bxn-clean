@@ -211,6 +211,31 @@ export default function Home() {
               </Link>
             </div>
           </div>  
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-center">
+
+  {/* LEFT SIDE — YOUR EXISTING TEXT */}
+  <div className="relative z-30">
+    {/* KEEP ALL YOUR EXISTING HERO TEXT HERE */}
+  </div>
+
+  {/* RIGHT SIDE — TRANSPARENT X VIDEO */}
+  <div className="relative z-30 flex items-center justify-center w-full">
+    <video
+      autoPlay
+      loop
+      muted
+      playsInline
+      preload="auto"
+      className="w-full max-w-[420px] md:max-w-[500px] lg:max-w-[600px] h-auto object-contain"
+    >
+      <source
+        src={`${import.meta.env.BASE_URL}BXN_X_transparent.webm`}
+        type="video/webm"
+      />
+    </video>
+  </div>
+
+</div>
  
     
     
