@@ -219,7 +219,7 @@ export default function Home() {
   </div>
 
   {/* RIGHT SIDE — TRANSPARENT X VIDEO */}
-  <div className="relative z-30 flex items-center justify-center w-full -mt-60 lg:-translate-x-10"">
+  <div className="relative z-30 flex items-center justify-center w-full -mt-60 lg:-translate-x-10">
     <video
       autoPlay
       loop
