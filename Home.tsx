@@ -211,21 +211,7 @@ export default function Home() {
               </Link>
             </div>
           </div> 
-<div className="relative z-30 flex items-center justify-center w-full">
-  <video
-    autoPlay
-    loop
-    muted
-    playsInline
-    preload="auto"
-    className="w-full max-w-[480px] md:max-w-[560px] lg:max-w-[620px] h-auto object-contain"
-  >
-    <source
-      src={`${import.meta.env.BASE_URL}BXN_X_transparent.webm`}
-      type="video/webm"
-    />
-  </video>
-</div>
+
 </div>
 </div>
 </section>
