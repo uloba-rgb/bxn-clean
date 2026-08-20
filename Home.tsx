@@ -211,37 +211,7 @@ export default function Home() {
               </Link>
             </div>
           </div>  
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-center">
-
-  {/* LEFT SIDE — X FORMATION VIDEO */}
-  <div className="relative z-30 flex items-center justify-center w-full">
-    <video
-      autoPlay
-      loop
-      muted
-      playsInline
-      preload="auto"
-      className="w-full max-w-[520px] md:max-w-[600px] lg:max-w-[680px] h-auto object-contain"
-    >
-      <source
-        src={`${import.meta.env.BASE_URL}BXN_X_transparent.webm`}
-        type="video/webm"
-      />
-    </video>
-  </div>
-
-  {/* RIGHT SIDE — EXISTING LANDING PAGE TEXT */}
-  <div className="relative z-30">
-    {/* Keep your current:
-        BRAND X NETWORKING
-        WE DON'T DO MARKETING
-        WE BUILD GROWTH SYSTEMS
-        paragraph
-        buttons
-    */}
-  </div>
-
-</div>
+ 
     
     
 
