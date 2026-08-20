@@ -211,7 +211,7 @@ export default function Home() {
               </Link>
             </div>
           </div> 
-<div className="relative z-30 flex items-center justify-center w-full lg:-mt-60">
+<div className="relative z-30 flex items-center justify-center w-full lg:-mt-20">
   <video
     autoPlay
     loop
