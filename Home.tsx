@@ -20,7 +20,7 @@ function useInView(threshold = 0.15) {
   const ref = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
 
-  useEffect(() => {
+  useEffect(() => { 
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
