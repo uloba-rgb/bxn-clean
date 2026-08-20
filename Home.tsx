@@ -240,6 +240,7 @@ export default function Home() {
   {/* LANDING PAGE TEXT */}
   <div className="relative z-30">
     {/* KEEP YOUR EXISTING TEXT HERE */}
+    </div> 
   </div>
 </div>
 </div>
