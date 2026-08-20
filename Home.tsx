@@ -217,7 +217,7 @@ export default function Home() {
   loop
   muted
   playsInline
-  className="w-full max-w-[520px] h-auto object-contain"
+  className="w-full h-[500px] md:h-[650px] lg:h-[750px] object-contain"
 >
   {/* iPhone / Safari */}
   <source
