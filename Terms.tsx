@@ -57,10 +57,10 @@ export default function Terms() {
         {/* HERO */}
         <div className="max-w-4xl mb-16">
           <div
-            className="font-['Inter'] text-xs md:text-sm uppercase tracking-[0.35em] mb-5"
+            className="font-['Inter'] text-xs md:text-sm tracking-[0.35em] mb-5"
             style={{ color: green }}
           >
-            Terms & Conditions
+             terms & conditions
           </div>
 
           <h1 className="font-['Anton'] uppercase leading-[0.9] tracking-wide">
