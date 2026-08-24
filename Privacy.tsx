@@ -11,18 +11,22 @@ export default function Privacy() {
         {/* MAIN HEADING */}
         <h1 className="font-['Anton'] text-5xl md:text-6xl uppercase mb-10 tracking-wide">
           <span className="text-white">Privacy </span>
-          <span className="text-green-400">Policy</span>
+          <span className="text-[#9DFF00]">Policy</span>
         </h1>
 
+        {/* PAGE CONTENT */}
         <div className="space-y-10 font-['Inter'] text-gray-300 leading-relaxed">
 
+          {/* INTRODUCTION */}
           <p>
             This Privacy Policy explains how Brand X Networking collects,
-            uses, stores, and protects information submitted through our website.
+            uses, stores, and protects information submitted through our
+            website.
           </p>
 
+          {/* INFORMATION WE COLLECT */}
           <section>
-            <h2 className="font-['Anton'] text-2xl md:text-3xl uppercase text-green-400 mb-4 tracking-wide">
+            <h2 className="font-['Anton'] text-2xl md:text-3xl uppercase text-[#9DFF00] mb-4 tracking-wide">
               Information We Collect
             </h2>
 
@@ -33,44 +37,62 @@ export default function Privacy() {
             </p>
           </section>
 
+          {/* HOW WE USE INFORMATION */}
           <section>
-            <h2 className="font-['Anton'] text-2xl md:text-3xl uppercase text-green-400 mb-4 tracking-wide">
+            <h2 className="font-['Anton'] text-2xl md:text-3xl uppercase text-[#9DFF00] mb-4 tracking-wide">
               How We Use Your Information
             </h2>
 
             <p>
               We use submitted information to respond to enquiries, provide
               our services, communicate with prospective clients, and improve
-              our website.
+              our website and services.
             </p>
           </section>
 
+          {/* DATA PROTECTION */}
           <section>
-            <h2 className="font-['Anton'] text-2xl md:text-3xl uppercase text-green-400 mb-4 tracking-wide">
+            <h2 className="font-['Anton'] text-2xl md:text-3xl uppercase text-[#9DFF00] mb-4 tracking-wide">
               Data Protection
             </h2>
 
             <p>
               We take reasonable measures to protect personal information
-              from unauthorized access, loss, misuse, or disclosure.
+              from unauthorized access, loss, misuse, alteration, or
+              disclosure.
             </p>
           </section>
 
+          {/* THIRD-PARTY SERVICES */}
           <section>
-            <h2 className="font-['Anton'] text-2xl md:text-3xl uppercase text-green-400 mb-4 tracking-wide">
+            <h2 className="font-['Anton'] text-2xl md:text-3xl uppercase text-[#9DFF00] mb-4 tracking-wide">
               Third-Party Services
             </h2>
 
             <p>
               Our website may use third-party services to support website
-              functionality, analytics, communication, or business operations.
-              These providers may process information according to their own
-              privacy policies.
+              functionality, analytics, communications, and business
+              operations. These providers may process information according
+              to their own privacy policies.
             </p>
           </section>
 
+          {/* COOKIES */}
           <section>
-            <h2 className="font-['Anton'] text-2xl md:text-3xl uppercase text-green-400 mb-4 tracking-wide">
+            <h2 className="font-['Anton'] text-2xl md:text-3xl uppercase text-[#9DFF00] mb-4 tracking-wide">
+              Cookies & Analytics
+            </h2>
+
+            <p>
+              Our website may use cookies and analytics technologies to
+              understand how visitors interact with the website and to help
+              us improve its performance and user experience.
+            </p>
+          </section>
+
+          {/* YOUR RIGHTS */}
+          <section>
+            <h2 className="font-['Anton'] text-2xl md:text-3xl uppercase text-[#9DFF00] mb-4 tracking-wide">
               Your Rights
             </h2>
 
@@ -81,14 +103,28 @@ export default function Privacy() {
             </p>
           </section>
 
+          {/* CHANGES */}
           <section>
-            <h2 className="font-['Anton'] text-2xl md:text-3xl uppercase text-green-400 mb-4 tracking-wide">
+            <h2 className="font-['Anton'] text-2xl md:text-3xl uppercase text-[#9DFF00] mb-4 tracking-wide">
+              Changes to This Policy
+            </h2>
+
+            <p>
+              We may update this Privacy Policy when necessary. Any updates
+              will be published on this page.
+            </p>
+          </section>
+
+          {/* CONTACT */}
+          <section>
+            <h2 className="font-['Anton'] text-2xl md:text-3xl uppercase text-[#9DFF00] mb-4 tracking-wide">
               Contact Us
             </h2>
 
             <p>
-              If you have questions about this Privacy Policy, please contact
-              Brand X Networking through our website.
+              If you have questions about this Privacy Policy or how your
+              information is handled, please contact Brand X Networking
+              through our website.
             </p>
           </section>
 
