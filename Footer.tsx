@@ -46,7 +46,18 @@ export default function Footer() {
             </Link>
             <Link href="/contact">
               <span className="hover:text-white transition-colors cursor-pointer">Contact</span>
-            </Link>
+            </Link> 
+            <Link href="/privacy">
+  <span className="hover:text-white transition-colors cursor-pointer">
+    Privacy
+  </span>
+</Link>
+
+<Link href="/terms">
+  <span className="hover:text-white transition-colors cursor-pointer">
+    Terms
+  </span>
+</Link>
           </div>
         </div>
 
