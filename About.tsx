@@ -47,7 +47,7 @@ export default function About() {
       <MarqueeStrip />
 
       {/* Hero Section */}
-      <section className="py-28 md:py-36 relative overflow-hidden" style={{ backgroundColor: '#0b0b0b' }}>
+      <section className="py-28 md:py-36 relative overflow-hidden bg-transparent">
         
         <div
           className="absolute inset-0 pointer-events-none"
