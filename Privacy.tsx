@@ -49,7 +49,7 @@ export default function Privacy() {
         {/* HERO HEADING */}
         <div className="max-w-4xl mb-16">
           <div
-            className="font-['Inter'] text-xs md:text-sm  tracking-[0.35em]"
+            className="font-['Inter'] text-xs md:text-sm mb-0"
             style={{ color: green }}
           >
             privacy & data
