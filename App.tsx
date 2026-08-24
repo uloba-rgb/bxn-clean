@@ -8,6 +8,8 @@ import Home from "./Home";
 import About from "./About";
 import Services from "./Services";
 import Contact from "./Contact";
+import Privacy from "./Privacy";
+import Terms from "./Terms";
 
 /**
  * BXN design reminder: one connected, dark operating system with neon-lime signals.
@@ -41,7 +43,9 @@ function Router() {
     <Route path="/" component={Home} />
     <Route path="/about" component={About} />
     <Route path="/services" component={Services} />
-    <Route path="/contact" component={Contact} />
+    <Route path="/contact" component={Contact} /> 
+    <Route path="/privacy" component={Privacy} />
+<Route path="/terms" component={Terms} />
     <Route path="/os" component={About} />
     <Route path="/404" component={NotFound} />
     <Route component={NotFound} />
