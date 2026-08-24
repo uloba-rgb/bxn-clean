@@ -6,91 +6,145 @@ export default function Terms() {
     <div className="min-h-screen bg-transparent">
       <Header />
 
-      <main className="relative z-10 container mx-auto px-6 py-20 max-w-4xl">
-        <h1 className="text-4xl md:text-5xl font-bold mb-8 text-white">
+      <main className="relative z-10 container mx-auto px-6 py-20 max-w-4xl font-['Inter']">
+        <h1 className="font-['Anton'] text-5xl md:text-6xl uppercase mb-8 text-white tracking-wide">
           Terms & Conditions
         </h1>
 
-        <div className="space-y-6 text-gray-300 leading-relaxed">
-
+        <div className="space-y-8 text-base md:text-lg text-gray-300 leading-relaxed">
           <p>
             These Terms & Conditions govern your use of the Brand X Networking
-            website and our services. By using this website, you agree to these
-            terms.
+            website and our services. By accessing or using this website, you
+            agree to these terms.
           </p>
 
-          <h2 className="text-2xl font-bold text-white">
-            Use of Our Website
-          </h2>
+          <section>
+            <h2 className="font-['Anton'] text-2xl md:text-3xl uppercase tracking-wide text-white mb-4">
+              Use of Our Website
+            </h2>
 
-          <p>
-            You may use this website for lawful purposes only. You must not use
-            the website in a way that could damage, disrupt, or interfere with
-            its operation or the experience of other users.
-          </p>
+            <p>
+              You may use this website for lawful purposes only. You must not
+              use the website in any way that could damage, disrupt, or
+              interfere with its operation, security, or accessibility.
+            </p>
+          </section>
 
-          <h2 className="text-2xl font-bold text-white">
-            Our Services
-          </h2>
+          <section>
+            <h2 className="font-['Anton'] text-2xl md:text-3xl uppercase tracking-wide text-white mb-4">
+              Our Services
+            </h2>
 
-          <p>
-            Information presented on this website provides a general overview
-            of Brand X Networking and our services. Specific project scope,
-            deliverables, timelines, fees, and responsibilities may be governed
-            by separate agreements between Brand X Networking and its clients.
-          </p>
+            <p>
+              Brand X Networking provides business, growth, technology,
+              automation, AI integration, branding, and related professional
+              services. The exact scope, deliverables, timelines, and fees for
+              client work are agreed separately before a project begins.
+            </p>
+          </section>
 
-          <h2 className="text-2xl font-bold text-white">
-            Intellectual Property
-          </h2>
+          <section>
+            <h2 className="font-['Anton'] text-2xl md:text-3xl uppercase tracking-wide text-white mb-4">
+              No Guaranteed Results
+            </h2>
 
-          <p>
-            Unless otherwise stated, the content, branding, graphics, designs,
-            text, and other original materials on this website belong to Brand X
-            Networking and may not be copied, reproduced, or distributed without
-            permission.
-          </p>
+            <p>
+              Business, marketing, growth, and technology outcomes depend on
+              many factors outside our control. While we work to deliver
+              effective strategies and systems, Brand X Networking does not
+              guarantee specific revenue, sales, leads, growth, or other
+              commercial results unless expressly stated in a written
+              agreement.
+            </p>
+          </section>
 
-          <h2 className="text-2xl font-bold text-white">
-            Third-Party Services
-          </h2>
+          <section>
+            <h2 className="font-['Anton'] text-2xl md:text-3xl uppercase tracking-wide text-white mb-4">
+              Intellectual Property
+            </h2>
 
-          <p>
-            Our website may contain links to or integrations with third-party
-            websites and services. Brand X Networking is not responsible for
-            the content, availability, privacy practices, or policies of those
-            third parties.
-          </p>
+            <p>
+              Unless otherwise stated, the content, branding, graphics,
+              designs, text, methodology, and other materials available on this
+              website are owned by or licensed to Brand X Networking and may
+              not be copied, reproduced, distributed, or commercially used
+              without permission.
+            </p>
+          </section>
 
-          <h2 className="text-2xl font-bold text-white">
-            Limitation of Liability
-          </h2>
+          <section>
+            <h2 className="font-['Anton'] text-2xl md:text-3xl uppercase tracking-wide text-white mb-4">
+              Third-Party Services
+            </h2>
 
-          <p>
-            To the extent permitted by applicable law, Brand X Networking will
-            not be liable for indirect or consequential losses arising from the
-            use of this website or reliance on information presented on it.
-          </p>
+            <p>
+              Our website and services may use or link to third-party
+              platforms, software, websites, or tools. Brand X Networking is
+              not responsible for the availability, policies, security, or
+              performance of third-party services.
+            </p>
+          </section>
 
-          <h2 className="text-2xl font-bold text-white">
-            Changes to These Terms
-          </h2>
+          <section>
+            <h2 className="font-['Anton'] text-2xl md:text-3xl uppercase tracking-wide text-white mb-4">
+              Limitation of Liability
+            </h2>
 
-          <p>
-            We may update these Terms & Conditions when necessary. Any changes
-            will be reflected on this page.
-          </p>
+            <p>
+              To the extent permitted by applicable law, Brand X Networking
+              will not be responsible for indirect, incidental, or
+              consequential losses arising from the use of this website or
+              reliance on its general information.
+            </p>
+          </section>
 
-          <h2 className="text-2xl font-bold text-white">
-            Contact Us
-          </h2>
+          <section>
+            <h2 className="font-['Anton'] text-2xl md:text-3xl uppercase tracking-wide text-white mb-4">
+              Website Information
+            </h2>
 
-          <p>
-            If you have questions regarding these Terms & Conditions, please
-            contact Brand X Networking through the contact information provided
-            on our website.
-          </p>
+            <p>
+              We aim to keep information on this website accurate and current,
+              but we do not guarantee that all information will always be
+              complete, error-free, or up to date. Website content may be
+              changed or updated without notice.
+            </p>
+          </section>
 
+          <section>
+            <h2 className="font-['Anton'] text-2xl md:text-3xl uppercase tracking-wide text-white mb-4">
+              Privacy
+            </h2>
+
+            <p>
+              Information submitted through our website is handled in
+              accordance with our Privacy Policy.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="font-['Anton'] text-2xl md:text-3xl uppercase tracking-wide text-white mb-4">
+              Changes to These Terms
+            </h2>
+
+            <p>
+              We may update these Terms & Conditions from time to time.
+              Updated terms will be published on this page and will apply from
+              the date they are posted.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="font-['Anton'] text-2xl md:text-3xl uppercase tracking-wide text-white mb-4">
+              Contact Us
+            </h2>
+
+            <p>
+              If you have questions about these Terms & Conditions, please
+              contact Brand X Networking through the contact information
+              available on our website.
+            </p>
+          </section>
         </div>
       </main>
 
