@@ -49,8 +49,15 @@ export default function Header() {
           ))}
         </div>
 <Link
+  href="/signin"
+  className="hidden md:flex px-5 py-2.5 bg-[#9DFF00] text-black font-bold uppercase tracking-wide rounded-md transition-all hover:bg-white"
+>
+  Sign In
+</Link>
+
+<Link
   href="/contact"
-  className="hidden md:flex px-5 py-2.5 bg-[#9DFF00] text-black font-bold uppercase tracking-wide rounded-md transition-all duration-300 hover:bg-white hover:scale-105"
+  className="hidden md:flex px-5 py-2.5 border border-[#9DFF00] text-[#9DFF00] font-bold uppercase tracking-wide transition-all hover:bg-[#9DFF00] hover:text-black"
 >
   Get in Touch
 </Link>
