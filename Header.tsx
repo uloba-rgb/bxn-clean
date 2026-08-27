@@ -48,15 +48,12 @@ export default function Header() {
             </Link>
           ))}
         </div>
-
-        <Link
-          href="/contact"
-          className="hidden border px-5 py-2.5 text-xs font-bold uppercase tracking-wide transition-all hover:bg-[#9dff00] hover:text-[#0a0a0a] md:block"
-          style={{ borderColor: "#9dff00", color: "#9dff00" }}
-        >
-          Get in Touch
-        </Link>
-
+<Link
+  href="/contact"
+  className="hidden md:flex px-5 py-2.5 bg-[#9DFF00] text-black font-bold uppercase tracking-wide rounded-md transition-all duration-300 hover:bg-white hover:scale-105"
+>
+  Get in Touch
+</Link>
         <button
           type="button"
           className="text-white transition-colors hover:text-[#9dff00] md:hidden"
