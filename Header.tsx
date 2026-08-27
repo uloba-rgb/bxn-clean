@@ -84,7 +84,14 @@ export default function Header() {
               {item.label}
             </Link>
           ))}
-          <Link href="/contact" onClick={closeMenu} className="mt-3 bg-[#9dff00] px-4 py-3 text-center text-xs font-bold uppercase tracking-wider text-[#0a0a0a]">
+          <Link href="/contact" onClick={closeMenu} className="mt-3 bg-[#9dff00] px-4 py-3 text-center text-xs font-bold uppercase tracking-wider text-[#0a0a0a]"> 
+            <Link
+  href="/signin"
+  onClick={closeMenu}
+  className="mt-3 bg-[#9DFF00] px-4 py-3 text-center text-xs font-bold uppercase tracking-wide text-black"
+>
+  Sign In
+</Link>
             Get in Touch
           </Link>
         </div>
