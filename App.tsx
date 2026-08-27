@@ -10,6 +10,7 @@ import Services from "./Services";
 import Contact from "./Contact";
 import Privacy from "./Privacy";
 import Terms from "./Terms";
+import SignIn from "./SignIn";
 
 
 /**
@@ -47,6 +48,7 @@ function Router() {
     <Route path="/contact" component={Contact} /> 
       <Route path="/privacy" component={Privacy} />
   <Route path="/terms" component={Terms} />
+    <Route path="/signin" component={SignIn} />
 
     <Route path="/404" component={NotFound} />
     <Route component={NotFound} />
