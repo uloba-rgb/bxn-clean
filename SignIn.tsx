@@ -76,11 +76,12 @@ const [password, setPassword] = useState("");
 >
   Sign in with Email
 </button>
-            onClick={handleGoogleSignIn}
-            className="mt-8 w-full bg-[#9DFF00] px-6 py-4 font-bold text-black transition-all hover:bg-white"
-          >
-            Continue with Google
-          </button>
+<button
+  onClick={handleGoogleSignIn}
+  className="mt-8 w-full bg-[#9DFF00] px-6 py-4 font-bold text-black transition-all hover:bg-white"
+>
+  Continue with Google
+</button>
         </div>
       </main>
 
