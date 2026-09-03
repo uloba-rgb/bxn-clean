@@ -51,7 +51,6 @@ const [password, setPassword] = useState("");
             Continue with your Google account to access BXN.
           </p>
 
-          <button
             <div className="my-6 text-center text-white/40">
   or
 </div>
