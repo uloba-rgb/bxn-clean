@@ -31,6 +31,19 @@ const [password, setPassword] = useState("");
   }
 
   window.location.href = "https://brandxnetworking.com";
+}; 
+  const handleEmailSignUp = async () => {
+  const { error } = await supabase.auth.signUp({
+    email,
+    password,
+  });
+
+  if (error) {
+    alert(error.message);
+    return;
+  }
+
+  alert("Account created. Please check your email.");
 };
 
   return (
@@ -75,6 +88,12 @@ const [password, setPassword] = useState("");
   className="w-full border border-[#9DFF00] px-6 py-4 font-bold text-[#9DFF00] transition-all hover:bg-[#9DFF00] hover:text-black"
 >
   Sign in with Email
+</button>
+          <button
+  onClick={handleEmailSignUp}
+  className="mt-3 w-full border border-white/30 px-6 py-4 font-bold text-white transition-all hover:border-[#9DFF00] hover:text-[#9DFF00]"
+>
+  Create Account
 </button>
 <button
   onClick={handleGoogleSignIn}
