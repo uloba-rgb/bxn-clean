@@ -77,7 +77,15 @@ export default function Home() {
   const [count3, setCount3] = useState(0);
   const statsRef = useRef<HTMLDivElement>(null);
   const [statsVisible, setStatsVisible] = useState(false);
+const [showSignInPopup, setShowSignInPopup] = useState(false);
 
+useEffect(() => {
+  const timer = setTimeout(() => {
+    setShowSignInPopup(true);
+  }, 5000);
+
+  return () => clearTimeout(timer);
+}, []);
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -114,7 +122,45 @@ export default function Home() {
     <div className="min-h-screen bg-transparent">
       <Header />
       <MarqueeStrip />
+{showSignInPopup && (
+  <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/70 px-4 backdrop-blur-sm">
+    <div className="relative w-full max-w-md border border-white/20 bg-black p-8 text-center">
+      <button
+        onClick={() => setShowSignInPopup(false)}
+        className="absolute right-4 top-3 text-2xl text-white/60 transition-colors hover:text-white"
+        aria-label="Close sign in popup"
+      >
+        ×
+      </button>
 
+      <p className="mb-3 text-xs uppercase tracking-widest text-[#9DFF00]">
+        Brand X Networking
+      </p>
+
+      <h2 className="font-['Anton'] text-4xl uppercase text-white">
+        Sign In to BXN
+      </h2>
+
+      <p className="mt-4 text-sm text-white/70">
+        Sign in to stay connected and access BXN.
+      </p>
+
+      <Link
+        href="/signin"
+        className="mt-7 block w-full bg-[#9DFF00] px-6 py-4 font-bold uppercase text-black transition-all hover:bg-white"
+      >
+        Sign In
+      </Link>
+
+      <button
+        onClick={() => setShowSignInPopup(false)}
+        className="mt-4 text-sm text-white/50 transition-colors hover:text-white"
+      >
+        Continue browsing
+      </button>
+    </div>
+  </div>
+)}
       {/* Hero Section */}
  <section
   className="relative pt-4 pb-20 md:pt-6 md:pb-24 lg:pt-6 lg:pb-28 overflow-visible"
