@@ -11,6 +11,7 @@ import Contact from "./Contact";
 import Privacy from "./Privacy";
 import Terms from "./Terms";
 import SignIn from "./SignIn";
+import ResetPassword from "./ResetPassword";
 
 
 /**
@@ -49,6 +50,7 @@ function Router() {
       <Route path="/privacy" component={Privacy} />
   <Route path="/terms" component={Terms} />
     <Route path="/signin" component={SignIn} />
+    <Route path="/reset-password" component={ResetPassword} />
 
     <Route path="/404" component={NotFound} />
     <Route component={NotFound} />
