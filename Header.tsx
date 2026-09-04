@@ -21,8 +21,8 @@ export default function Header() {
 
   return (
 <header
-  className="border-b backdrop-blur-[10px] "
-  style={{ backgroundColor: "rgba(10, 10, 10, 0.9)", borderColor: "#1e1e1e" }}
+  className="backdrop-blur-[16px]"
+  style={{ backgroundColor: "rgba(10, 10, 10, 0.9)" }}
 >
       <nav className="container flex items-center justify-between pt-5 pb-2" aria-label="Primary">
         <div className="flex items-center gap-6">
@@ -34,7 +34,7 @@ export default function Header() {
 />
 </Link>
 
-          <div className="hidden items-center gap-3 border-l border-gray-700 pl-6 md:flex">
+          <div className="hidden items-center gap-3 pl-6 md:flex">
             <a href="https://www.facebook.com/profile.php?id=61590224003461" target="_blank" rel="noopener noreferrer" className="text-gray-500 transition-colors hover:text-white" title="Follow us on Facebook"><Facebook size={18} /></a>
             <a href="https://www.instagram.com/brandxnetworking?igsh=MWwydzc4aXpqemg1Yw%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" className="text-gray-500 transition-colors hover:text-white" title="Follow us on Instagram"><Instagram size={18} /></a>
             <a href="https://www.linkedin.com/company/135803953/admin/dashboard/" target="_blank" rel="noopener noreferrer" className="text-gray-500 transition-colors hover:text-white" title="Follow us on LinkedIn"><Linkedin size={18} /></a>
