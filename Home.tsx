@@ -80,8 +80,13 @@ export default function Home() {
 const [showSignInPopup, setShowSignInPopup] = useState(false);
 
 useEffect(() => {
+  const hasSeenPopup = localStorage.getItem("bxnSignInPopupSeen");
+
+  if (hasSeenPopup) return;
+
   const timer = setTimeout(() => {
     setShowSignInPopup(true);
+    localStorage.setItem("bxnSignInPopupSeen", "true");
   }, 5000);
 
   return () => clearTimeout(timer);
