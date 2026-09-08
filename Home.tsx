@@ -1,5 +1,5 @@
 import Header from "./Header";
-import MarqueeStrip from "./MarqueeStrip";
+import MarqueeStrip from "./MarqueeStrip"; 
 import Footer from "./Footer";
 import { useEffect, useRef, useState } from "react";
 import { ArrowRight, CheckCircle, Zap, Shield, Brain, Target, TrendingUp, Users } from "lucide-react";
