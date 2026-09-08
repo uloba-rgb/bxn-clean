@@ -263,7 +263,7 @@ useEffect(() => {
             </div>
           </div>  
     {/* RIGHT SIDE — BXN X VIDEO */}
-<div className="flex items-start justify-center pt-4 lg:-mt-24">
+<div className="flex items-start justify-center pt-4 lg:-mt-60">
   <video
     autoPlay
     loop
