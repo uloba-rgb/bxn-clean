@@ -262,17 +262,21 @@ useEffect(() => {
               </Link>
             </div>
           </div>  
-  
-
-
- 
-    
-    
-
-
-
-
-
+    {/* RIGHT SIDE — BXN X VIDEO */}
+<div className="flex items-center justify-center">
+  <video
+    autoPlay
+    loop
+    muted
+    playsInline
+    className="w-full max-w-[760px] object-contain"
+  >
+    <source
+      src="/BXN_X_1920x1080_NEON_9DFF00.webm"
+      type="video/webm"
+    />
+  </video>
+</div>
 </div>
 </div>
 </section>
