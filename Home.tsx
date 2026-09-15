@@ -342,9 +342,9 @@ useEffect(() => {
     object-contain
   "
 >
-  <source
-  src="/BXN_X_MOBILE.mp4"
-  type="video/mp4"
+<source
+  src="/BXN_X_1920x1080_NEON_9DFF00.webm"
+  type="video/webm"
 />
 </video>
 
