@@ -23,12 +23,31 @@ function Router() {
     <div className="relative isolate min-h-screen bg-black">
 {/* MOBILE BACKGROUND VIDEO */}
 <video
+  ref={(video) => {
+    if (video) {
+      video.muted = true;
+      video.defaultMuted = true;
+
+      const startVideo = () => {
+        video.play().catch(() => {});
+      };
+
+      video.addEventListener("loadeddata", startVideo, { once: true });
+      video.addEventListener("canplay", startVideo, { once: true });
+
+      startVideo();
+    }
+  }}
   autoPlay
   loop
   muted
   playsInline
   preload="auto"
   disablePictureInPicture
+  onLoadedData={(e) => {
+    e.currentTarget.muted = true;
+    e.currentTarget.play().catch(() => {});
+  }}
   className="fixed inset-0 z-0 block h-[100svh] w-screen object-cover pointer-events-none md:hidden"
 >
   <source
