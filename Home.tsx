@@ -308,26 +308,45 @@ useEffect(() => {
   />
 </video>
 
-  {/* DESKTOP X — ORIGINAL WEBM */}
-  <video
-    autoPlay
-    loop
-    muted
-    playsInline
-    preload="auto"
-    className="
-      hidden
-      lg:block
-      w-full
-      max-w-[760px]
-      object-contain
-    "
-  >
-    <source
-      src="/BXN_X_1920x1080_NEON_9DFF00.webm"
-      type="video/webm"
-    />
-  </video>
+ {/* DESKTOP X — ORIGINAL WEBM */}
+<video
+  ref={(video) => {
+    if (video) {
+      video.muted = true;
+      video.defaultMuted = true;
+
+      const playVideo = () => {
+        video.play().catch(() => {});
+      };
+
+      video.addEventListener("loadeddata", playVideo, { once: true });
+      video.addEventListener("canplay", playVideo, { once: true });
+
+      playVideo();
+    }
+  }}
+  autoPlay
+  loop
+  muted
+  playsInline
+  preload="auto"
+  onLoadedData={(e) => {
+    e.currentTarget.muted = true;
+    e.currentTarget.play().catch(() => {});
+  }}
+  className="
+    hidden
+    lg:block
+    w-full
+    max-w-[760px]
+    object-contain
+  "
+>
+  <source
+    src="/BXN_X_1920x1080_NEON_9DFF00.webm"
+    type="video/webm"
+  />
+</video>
 
 </div>
 </div>
