@@ -263,7 +263,7 @@ useEffect(() => {
             </div>
           </div>  
 {/* RIGHT SIDE — BXN X VIDEO */}
-<div className="flex items-center justify-center pt-4 mt-2 lg:mt-0 lg:-mt-60">
+<div className="flex items-center justify-center pt-4 mt-2 lg:mt-0 lg:-mt-120">
 
  {/* MOBILE X — MP4 */}
 <video
