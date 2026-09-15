@@ -264,6 +264,8 @@ useEffect(() => {
           </div>  
 {/* RIGHT SIDE — BXN X VIDEO */}
 <div className="flex items-center justify-center pt-4 mt-2 lg:mt-0 lg:-mt-60">
+
+  {/* MOBILE X — MP4 */}
   <video
     autoPlay
     loop
@@ -273,14 +275,32 @@ useEffect(() => {
     disablePictureInPicture
     className="
       block
+      lg:hidden
       w-[92vw]
       max-w-[430px]
       h-auto
       object-contain
-      sm:w-[85vw]
-      md:max-w-[600px]
-      lg:w-full
-      lg:max-w-[760px]
+    "
+  >
+    <source
+      src="/BXN_X_MOBILE.mp4"
+      type="video/mp4"
+    />
+  </video>
+
+  {/* DESKTOP X — ORIGINAL WEBM */}
+  <video
+    autoPlay
+    loop
+    muted
+    playsInline
+    preload="auto"
+    className="
+      hidden
+      lg:block
+      w-full
+      max-w-[760px]
+      object-contain
     "
   >
     <source
@@ -288,6 +308,7 @@ useEffect(() => {
       type="video/webm"
     />
   </video>
+
 </div>
 </div>
 </div>
