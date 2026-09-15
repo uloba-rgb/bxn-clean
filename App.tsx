@@ -23,19 +23,32 @@ function Router() {
     <div className="relative isolate min-h-screen bg-black">
 
       {/* BXN GLOBAL BACKGROUND VIDEO */}
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        preload="auto"
-        className="fixed inset-0 w-full h-full object-cover z-0"
-      >
-        <source
-          src={`${import.meta.env.BASE_URL}bxn-background.mp4`}
-          type="video/mp4"
-        />
-      </video>
+<video
+  autoPlay
+  loop
+  muted
+  playsInline
+  preload="auto"
+  disablePictureInPicture
+  aria-hidden="true"
+  className="
+    fixed
+    inset-0
+    z-0
+    block
+    w-screen
+    h-[100svh]
+    object-cover
+    pointer-events-none
+    md:w-full
+    md:h-full
+  "
+>
+  <source
+    src={`${import.meta.env.BASE_URL}bxn-background.mp4`}
+    type="video/mp4"
+  />
+</video>
 
       {/* DARK OVERLAY */}
       <div className="fixed inset-0 bg-black/50 z-[1]" />
