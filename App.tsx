@@ -21,53 +21,36 @@ import ResetPassword from "./ResetPassword";
 function Router() {
   return (
     <div className="relative isolate min-h-screen bg-black">
-
-    {/* BXN GLOBAL BACKGROUND VIDEO */}
+{/* MOBILE BACKGROUND VIDEO */}
 <video
-  ref={(video) => {
-    if (video) {
-      video.muted = true;
-      video.defaultMuted = true;
-
-      const playBackground = () => {
-        video.play().catch(() => {});
-      };
-
-      video.addEventListener("loadeddata", playBackground, { once: true });
-      video.addEventListener("canplay", playBackground, { once: true });
-
-      playBackground();
-    }
-  }}
   autoPlay
   loop
   muted
   playsInline
   preload="auto"
   disablePictureInPicture
-  onLoadedData={(e) => {
-    e.currentTarget.muted = true;
-    e.currentTarget.play().catch(() => {});
-  }}
-  className="
-    fixed
-    inset-0
-    z-0
-    block
-    w-screen
-    h-[100svh]
-    object-cover
-    pointer-events-none
-    md:w-full
-    md:h-full
-  "
+  className="fixed inset-0 z-0 block h-[100svh] w-screen object-cover pointer-events-none md:hidden"
+>
+  <source
+    src={`${import.meta.env.BASE_URL}bxn-background-mobile.mp4`}
+    type="video/mp4"
+  />
+</video>
+
+{/* DESKTOP BACKGROUND VIDEO — ORIGINAL */}
+<video
+  autoPlay
+  loop
+  muted
+  playsInline
+  preload="auto"
+  className="fixed inset-0 z-0 hidden h-full w-full object-cover pointer-events-none md:block"
 >
   <source
     src={`${import.meta.env.BASE_URL}bxn-background.mp4`}
     type="video/mp4"
   />
 </video>
-
       {/* DARK OVERLAY */}
       <div className="fixed inset-0 bg-black/50 z-[1]" />
 
