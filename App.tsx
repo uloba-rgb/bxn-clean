@@ -22,15 +22,33 @@ function Router() {
   return (
     <div className="relative isolate min-h-screen bg-black">
 
-      {/* BXN GLOBAL BACKGROUND VIDEO */}
+    {/* BXN GLOBAL BACKGROUND VIDEO */}
 <video
+  ref={(video) => {
+    if (video) {
+      video.muted = true;
+      video.defaultMuted = true;
+
+      const playBackground = () => {
+        video.play().catch(() => {});
+      };
+
+      video.addEventListener("loadeddata", playBackground, { once: true });
+      video.addEventListener("canplay", playBackground, { once: true });
+
+      playBackground();
+    }
+  }}
   autoPlay
   loop
   muted
   playsInline
   preload="auto"
   disablePictureInPicture
-  aria-hidden="true"
+  onLoadedData={(e) => {
+    e.currentTarget.muted = true;
+    e.currentTarget.play().catch(() => {});
+  }}
   className="
     fixed
     inset-0
