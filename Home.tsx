@@ -265,28 +265,48 @@ useEffect(() => {
 {/* RIGHT SIDE — BXN X VIDEO */}
 <div className="flex items-center justify-center pt-4 mt-2 lg:mt-0 lg:-mt-60">
 
-  {/* MOBILE X — MP4 */}
-  <video
-    autoPlay
-    loop
-    muted
-    playsInline
-    preload="auto"
-    disablePictureInPicture
-    className="
-      block
-      lg:hidden
-      w-[92vw]
-      max-w-[430px]
-      h-auto
-      object-contain
-    "
-  >
-    <source
-      src="/BXN_X_MOBILE.mp4"
-      type="video/mp4"
-    />
-  </video>
+ {/* MOBILE X — MP4 */}
+<video
+  ref={(video) => {
+    if (video) {
+      video.muted = true;
+      video.defaultMuted = true;
+
+      const playVideo = () => {
+        video.play().catch(() => {});
+      };
+
+      video.addEventListener("loadeddata", playVideo, { once: true });
+      video.addEventListener("canplay", playVideo, { once: true });
+
+      playVideo();
+    }
+  }}
+  autoPlay
+  loop
+  muted
+  playsInline
+  preload="auto"
+  disablePictureInPicture
+  onLoadedData={(e) => {
+    e.currentTarget.muted = true;
+    e.currentTarget.play().catch(() => {});
+  }}
+  className="
+    block
+    lg:hidden
+    w-[92vw]
+    max-w-[430px]
+    h-auto
+    object-contain
+    pointer-events-none
+  "
+>
+  <source
+    src="/BXN_X_MOBILE.mp4"
+    type="video/mp4"
+  />
+</video>
 
   {/* DESKTOP X — ORIGINAL WEBM */}
   <video
