@@ -316,15 +316,16 @@ useEffect(() => {
   playsInline
   preload="auto"
   disablePictureInPicture
-  className="
-    hidden
-    lg:block
-    w-full
-    max-w-[760px]
-    h-auto
-    object-contain
-    pointer-events-none
-  "
+ className="
+  hidden
+  lg:block
+  lg:-translate-y-32
+  w-full
+  max-w-[760px]
+  h-auto
+  object-contain
+  pointer-events-none
+"
 >
   <source
     src="/BXN_X_1920x1080_NEON_9DFF00.webm"
