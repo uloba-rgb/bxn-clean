@@ -96,17 +96,20 @@ function Router() {
         disablePictureInPicture
         controls={false}
         aria-hidden="true"
-        className="
-          fixed
-          inset-0
-          z-0
-          block
-          h-[100svh]
-          w-screen
-          object-cover
-          pointer-events-none
-          md:hidden
-        "
+       className="
+  fixed
+  top-0
+  left-0
+  z-0
+  block
+  min-w-full
+  min-h-[100svh]
+  w-full
+  h-[100svh]
+  object-cover
+  pointer-events-none
+  md:hidden
+"
       >
         <source
           src={`${import.meta.env.BASE_URL}bxn-background-mobile.mp4`}
