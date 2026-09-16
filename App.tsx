@@ -106,7 +106,7 @@ function Router() {
   min-h-[100svh]
   w-full
   h-[100svh]
-  object-cover
+  object-fill
   pointer-events-none
   md:hidden
 "
