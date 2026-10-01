@@ -109,6 +109,7 @@ function Router() {
   object-fill
   pointer-events-none
   md:hidden
+            md:block brightness-[0.40]
 "
       >
         <source
