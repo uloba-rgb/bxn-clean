@@ -264,74 +264,37 @@ useEffect(() => {
           </div>  
 {/* RIGHT SIDE — BXN X VIDEO */}
 <div className="flex items-center justify-center pt-4 mt-2 lg:mt-0 lg:-mt-200">
-
- {/* MOBILE X — MP4 */}
-<video
-  ref={(video) => {
-    if (video) {
-      video.muted = true;
-      video.defaultMuted = true;
-
-      const playVideo = () => {
-        video.play().catch(() => {});
-      };
-
-      video.addEventListener("loadeddata", playVideo, { once: true });
-      video.addEventListener("canplay", playVideo, { once: true });
-
-      playVideo();
-    }
-  }}
-  autoPlay
-  loop
-  muted
-  playsInline
-  preload="auto"
-  disablePictureInPicture
-  onLoadedData={(e) => {
-    e.currentTarget.muted = true;
-    e.currentTarget.play().catch(() => {});
-  }}
+<iframe
+  src="/BXN%20Logo%20Animation.html"
+  title="BXN Logo Animation"
   className="
     block
     lg:hidden
     w-[92vw]
     max-w-[430px]
-    h-auto
-    object-contain
+    h-[430px]
+    border-0
     pointer-events-none
   "
->
-  <source
-    src="/BXN_X_MOBILE.mp4"
-    type="video/mp4"
-  />
-</video>
+  style={{ background: "transparent" }}
+/>
 
- {/* DESKTOP X — TRANSPARENT WEBM */}
-<video
-  autoPlay
-  loop
-  muted
-  playsInline
-  preload="auto"
-  disablePictureInPicture
- className="
-  hidden
-  lg:block
-  lg:-translate-y-32
-  w-full
-  max-w-[760px]
-  h-auto
-  object-contain
-  pointer-events-none
-"
->
-  <source
-    src="/BXN_X_1920x1080_NEON_9DFF00.webm"
-    type="video/webm"
-  />
-</video>
+ {/* DESKTOP BXN LOGO ANIMATION */}
+<iframe
+  src="/BXN%20Logo%20Animation.html"
+  title="BXN Logo Animation"
+  className="
+    hidden
+    lg:block
+    lg:-translate-y-32
+    w-full
+    max-w-[760px]
+    h-[760px]
+    border-0
+    pointer-events-none
+  "
+  style={{ background: "transparent" }}
+/>
 
 </div>
 </div>
