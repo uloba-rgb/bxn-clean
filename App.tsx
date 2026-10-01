@@ -135,7 +135,7 @@ function Router() {
           object-cover
           pointer-events-none
           md:block
-        md:block brightness-[0.55]
+        md:block brightness-[0.40]
         "
       >
         <source
