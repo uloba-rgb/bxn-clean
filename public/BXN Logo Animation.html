@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>BXN Logo Animation</title>
+<style>
+:root{--g:#a2c617;--bg:#000;--fg:#fff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:inherit}
+html,body{margin:0;background:transparent;height:100%}
+main{height:100%;display:grid;place-items:center;padding:4vw}
+
+
+
+
+svg{width:min(100%,1400px);height:auto;overflow:visible}
+
+svg *{transform-box:fill-box;transform-origin:center}
+.w{fill:#fff}.gr{fill:var(--g)}
+.B{animation:inL 12s infinite cubic-bezier(.2,.8,.2,1)}
+.N{animation:inR 12s infinite cubic-bezier(.2,.8,.2,1)}
+.xl{animation:arms 12s infinite cubic-bezier(.3,1.3,.4,1)}
+.xu{animation:head 12s infinite cubic-bezier(.3,1.3,.4,1)}
+.xg{animation:step 12s infinite cubic-bezier(.3,1.5,.4,1)}
+@keyframes inL{0%{transform:translateX(-120px);opacity:0}8%,92%{transform:none;opacity:1}100%{opacity:0}}
+@keyframes inR{0%{transform:translateX(120px);opacity:0}8%,92%{transform:none;opacity:1}100%{opacity:0}}
+/* left arm: gathers, then opens wide like an open, confident posture */
+@keyframes arms{0%{transform:translate(-160px,40px) rotate(-30deg);opacity:0}9%{transform:none;opacity:1}28%{transform:none}36%,48%{transform:translate(-22px,-8px) rotate(-7deg)}56%,92%{transform:none;opacity:1}100%{opacity:0}}
+/* upper piece: looks up, a nod of certainty */
+@keyframes head{0%{transform:translate(90px,-90px) rotate(25deg);opacity:0}9%{transform:none;opacity:1}20%{transform:none}27%,40%{transform:translate(8px,-20px) rotate(6deg)}50%{transform:translate(0,4px)}56%,92%{transform:none;opacity:1}100%{opacity:0}}
+/* green wedge: the step forward / spark */
+@keyframes step{0%{transform:translateY(-200px) scale(.4);opacity:0}11%{transform:none;opacity:1}14%{transform:translateY(-14px)}17%{transform:none}50%{transform:scale(1)}56%,66%{transform:scale(1.28) translate(8px,-8px);filter:drop-shadow(0 0 22px #a2c617)}76%,92%{transform:none;opacity:1;filter:none}100%{opacity:0}}
+.ring{fill:none;stroke:var(--g);stroke-width:4;opacity:0;animation:ring 12s infinite ease-out}
+@keyframes ring{0%,52%{opacity:0;transform:scale(.3)}56%{opacity:.9;transform:scale(.6)}72%{opacity:0;transform:scale(3.2)}100%{opacity:0}}
+.bar{fill:var(--g);opacity:.9;transform-origin:50% 100%;transform:scaleY(0);animation:bar 12s infinite cubic-bezier(.2,1.2,.3,1)}
+.bar:nth-of-type(1){--d:0s}.bar:nth-of-type(2){--d:.12s}.bar:nth-of-type(3){--d:.24s}.bar:nth-of-type(4){--d:.36s}.bar:nth-of-type(5){--d:.48s}.bar:nth-of-type(6){--d:.6s}.bar:nth-of-type(7){--d:.72s}
+@keyframes bar{0%,56%{transform:scaleY(0);opacity:.9}66%,90%{transform:scaleY(1)}97%,100%{transform:scaleY(1);opacity:0}}
+.bars{animation:none}
+.line{fill:none;stroke:#fff;stroke-width:12;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1;stroke-dashoffset:1;animation:draw 12s infinite ease-in-out}
+@keyframes draw{0%,62%{stroke-dashoffset:1;opacity:1}78%,92%{stroke-dashoffset:0;opacity:1}98%,100%{stroke-dashoffset:0;opacity:0}}
+.tip{fill:#fff;opacity:0;animation:tip 12s infinite}
+@keyframes tip{0%,76%{opacity:0;transform:scale(.2)}80%{opacity:1;transform:scale(1.5)}86%,92%{opacity:1;transform:scale(1)}98%,100%{opacity:0}}
+.tag{opacity:0;animation:tagin 12s infinite}
+@keyframes tagin{0%,10%{opacity:0;transform:scaleX(.2)}18%,92%{opacity:1;transform:none}100%{opacity:0}}
+.cap{font:800 54px Helvetica,Arial,sans-serif;letter-spacing:.35em;fill:var(--g);opacity:0;text-anchor:middle}
+.c1{animation:c1 12s infinite}.c2{animation:c2 12s infinite}.c3{animation:c3 12s infinite}.c4{animation:c4 12s infinite}
+@keyframes c1{0%,14%{opacity:0}18%,28%{opacity:1}32%,100%{opacity:0}}
+@keyframes c2{0%,32%{opacity:0}36%,46%{opacity:1}50%,100%{opacity:0}}
+@keyframes c3{0%,50%{opacity:0}54%,64%{opacity:1}68%,100%{opacity:0}}
+@keyframes c4{0%,68%{opacity:0}72%,90%{opacity:1}96%,100%{opacity:0}}
+@media(prefers-reduced-motion:reduce){svg *{animation:none!important;opacity:1!important;transform:none!important}.bar{transform:none!important}.line{stroke-dashoffset:0!important}.ring,.cap{display:none}}
+</style></head>
+<body>
+<main><svg viewBox="400 50 1640 980" role="img" aria-label="Animated BXN logo">
+    <g>
+      <rect class="bar" x="1010" y="230" width="70" height="150" rx="8" style="animation-delay:0s"/>
+      <rect class="bar" x="1150" y="210" width="70" height="170" rx="8" style="animation-delay:.12s"/>
+      <rect class="bar" x="1290" y="180" width="70" height="200" rx="8" style="animation-delay:.24s"/>
+      <rect class="bar" x="1430" y="160" width="70" height="220" rx="8" style="animation-delay:.36s"/>
+      <rect class="bar" x="1570" y="130" width="70" height="250" rx="8" style="animation-delay:.48s"/>
+      <rect class="bar" x="1710" y="110" width="70" height="270" rx="8" style="animation-delay:.6s"/>
+      <rect class="bar" x="1850" y="90" width="70" height="290" rx="8" style="animation-delay:.72s"/>
+      <path class="line" pathLength="1" d="M1000 330 L1180 280 L1320 300 L1480 210 L1620 230 L1790 140 L1950 80"/>
+      <circle class="tip" cx="1950" cy="80" r="22"/>
+    </g>
+    <path class="w B" fill-rule="evenodd" d="M460 410H825C915 410 965 475 965 550C965 590 950 615 931 638C960 672 975 705 975 745C975 820 920 883 835 883H460V660C460 620 485 593 530 593H825C848 593 864 575 864 555C864 535 848 518 825 518H460ZM555 699H830C855 699 871 718 871 740C871 760 855 779 832 779H555Z"/>
+    <path class="w xl" d="M965 410H1105Q1112 410 1117 416L1323 648L1118 878Q1114 883 1108 883H975L1178 647Z"/>
+    <path class="w xu" d="M1393 410H1533L1342 631L1268 548Z"/>
+    <path class="gr xg" d="M1340 664L1533 883H1398L1268 745Z"/>
+    <circle class="ring" cx="1400" cy="780" r="90"/>
+    <path class="w N" d="M1583 410L1890 695V490C1890 440 1925 415 1983 410V883H1925L1633 606V883H1580L1533 830V465Z"/>
+    <g class="tag">
+      <rect class="gr" x="452" y="972" width="330" height="13" rx="6"/>
+      <rect class="gr" x="1654" y="972" width="330" height="13" rx="6"/>
+      <text x="1233" y="995" text-anchor="middle" fill="#fff" font-family="Helvetica,Arial,sans-serif" font-weight="800" font-size="56" letter-spacing="3">BRAND X NETWORKING</text>
+    </g>
+  </svg></main>
+<script>if(window.self===window.top)document.documentElement.style.background="#000";</script>
+</body></html>
